@@ -1,0 +1,12 @@
+{
+  "spellcheck": false,
+  "alwaysUpdateLinks": true,
+  "showLineNumber": false,
+  "focusNewTab": false,
+  "rightToLeft": false,
+  "showIndentGuide": false,
+  "userIgnoreFilters": null,
+  "showInlineTitle": true,
+  "strictLineBreaks": false,
+  "openBehavior": "file:Bases/backlog-base.base"
+}

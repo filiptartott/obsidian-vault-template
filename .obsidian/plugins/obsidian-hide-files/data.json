@@ -1,0 +1,30 @@
+{
+  "hiddenFiles": [
+    {
+      "name": "sortspec.md",
+      "hidden": true
+    }
+  ],
+  "hiddenFolders": [
+    {
+      "name": "templates",
+      "hidden": true
+    },
+    {
+      "name": "Bases",
+      "hidden": true
+    },
+    {
+      "name": "Tasks",
+      "hidden": true
+    },
+    {
+      "name": "Daily Notes",
+      "hidden": true
+    },
+    {
+      "name": "Weekly Sprints",
+      "hidden": true
+    }
+  ]
+}

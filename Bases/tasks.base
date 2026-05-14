@@ -1,0 +1,290 @@
+summaries:
+  Earliest: values.earliest()
+filters:
+  and:
+    - file.inFolder("Tasks")
+formulas:
+  week: |+
+    [1, 2, 3, 4, 5]
+        .map(
+            if(
+                start.isEmpty() && end.isEmpty() && deadline.isEmpty(),
+                "",
+                if(
+                    deadline ==
+                        today() - (today().format("E") + "d") + (value + "d"),
+                    "🟥",
+                    if(
+                        start <=
+                            today() - (today().format("E") + "d") + (value + "d") &&
+                            end >=
+                                today() -
+                                    (today().format("E") + "d") +
+                                    (value + "d"),
+                        "🔲",
+                        "⬛"
+                    )
+                ) +
+                    if(today().format("E") == value + 1, "❲", "") +
+                    if(today().format("E") == value, "❳", "")
+            )
+        ).join("")
+        
+  content: |-
+    [
+    if(note.parent, link(note.parent, "• Parent")),
+
+    if(note.docs, link(note.docs, "• Docs")),
+
+    if(note.comment, link(file.asLink(), "• Comment")),
+
+    if(note["jira"], link(file.asLink(), "• Jira"))
+    ]
+properties:
+  note.priority:
+    displayName: priority
+  note.docs:
+    displayName: docs
+  note.project:
+    displayName: project
+  file.name:
+    displayName: task
+  note.issue:
+    displayName: issue
+  note.wiki:
+    displayName: wiki
+  note.jira refferences:
+    displayName: jira references
+  note.tuesday:
+    displayName: tuesday
+views:
+  - type: table
+    name: Todo
+    filters:
+      and:
+        - done == false
+    groupBy:
+      property: project
+      direction: ASC
+    order:
+      - done
+      - file.name
+      - priority
+      - formula.week
+      - start
+      - end
+      - deadline
+      - formula.content
+    sort:
+      - property: start
+        direction: ASC
+      - property: end
+        direction: ASC
+      - property: deadline
+        direction: ASC
+      - property: priority
+        direction: DESC
+      - property: file.ctime
+        direction: DESC
+    columnSize:
+      note.done: 1
+      file.name: 440
+      note.priority: 1
+      formula.week: 113
+      note.start: 60
+      note.end: 60
+      note.deadline: 60
+      formula.content: 256
+  - type: table
+    name: All
+    groupBy:
+      property: project
+      direction: ASC
+    order:
+      - done
+      - file.name
+      - priority
+      - formula.week
+      - start
+      - end
+      - deadline
+      - formula.content
+    sort:
+      - property: done
+        direction: ASC
+      - property: start
+        direction: ASC
+      - property: end
+        direction: ASC
+      - property: deadline
+        direction: ASC
+      - property: priority
+        direction: DESC
+      - property: file.ctime
+        direction: DESC
+    columnSize:
+      note.done: 1
+      file.name: 440
+      note.priority: 1
+      formula.week: 113
+      note.start: 60
+      note.end: 60
+      note.deadline: 60
+      formula.content: 256
+  - type: table
+    name: Planned
+    filters:
+      and:
+        - done == false
+        - or:
+            - "!start.isEmpty()"
+            - "!end.isEmpty()"
+            - "!deadline.isEmpty()"
+    order:
+      - done
+      - file.name
+      - priority
+      - formula.week
+      - start
+      - end
+      - deadline
+      - project
+      - formula.content
+    sort:
+      - property: start
+        direction: ASC
+      - property: end
+        direction: ASC
+      - property: deadline
+        direction: ASC
+      - property: priority
+        direction: DESC
+      - property: file.ctime
+        direction: DESC
+    columnSize:
+      note.done: 1
+      file.name: 440
+      note.priority: 1
+      formula.week: 113
+      note.start: 60
+      note.end: 60
+      note.deadline: 60
+      note.project: 127
+      formula.content: 256
+  - type: table
+    name: This Week (detailed)
+    filters:
+      and:
+        - done == false
+        - or:
+            - |-
+              start <= today() - (today().format("E") + "d") + "5d"
+              && end >= today() - (today().format("E") + "d") + "1d"
+            - |-
+              deadline <= today() - (today().format("E") + "d") + "5d"
+              && deadline >= today() - (today().format("E") + "d") + "1d"
+    order:
+      - done
+      - file.name
+      - priority
+      - formula.week
+      - start
+      - end
+      - deadline
+      - project
+      - formula.content
+    sort:
+      - property: start
+        direction: ASC
+      - property: end
+        direction: ASC
+      - property: deadline
+        direction: ASC
+      - property: priority
+        direction: DESC
+      - property: file.ctime
+        direction: DESC
+    columnSize:
+      note.done: 1
+      file.name: 440
+      note.priority: 1
+      formula.week: 113
+      note.start: 60
+      note.end: 60
+      note.deadline: 60
+      note.project: 127
+      formula.content: 256
+  - type: table
+    name: This Week
+    filters:
+      and:
+        - done == false
+        - or:
+            - |-
+              start <= today() - (today().format("E") + "d") + "5d"
+              && end >= today() - (today().format("E") + "d") + "1d"
+            - |-
+              deadline <= today() - (today().format("E") + "d") + "5d"
+              && deadline >= today() - (today().format("E") + "d") + "1d"
+    order:
+      - done
+      - file.name
+      - priority
+      - formula.week
+    sort:
+      - property: priority
+        direction: DESC
+      - property: start
+        direction: ASC
+      - property: end
+        direction: ASC
+      - property: deadline
+        direction: ASC
+      - property: file.ctime
+        direction: DESC
+    columnSize:
+      note.done: 1
+      file.name: 440
+      note.priority: 1
+      formula.week: 113
+      note.start: 60
+      note.end: 60
+      note.deadline: 60
+      note.project: 127
+      formula.content: 256
+  - type: table
+    name: With Priority
+    filters:
+      and:
+        - done == false
+        - "!priority.isEmpty()"
+    order:
+      - done
+      - file.name
+      - priority
+      - formula.week
+      - start
+      - end
+      - deadline
+      - project
+      - formula.content
+    sort:
+      - property: start
+        direction: ASC
+      - property: end
+        direction: ASC
+      - property: deadline
+        direction: ASC
+      - property: priority
+        direction: DESC
+      - property: file.ctime
+        direction: DESC
+    columnSize:
+      note.done: 1
+      file.name: 440
+      note.priority: 1
+      formula.week: 113
+      note.start: 60
+      note.end: 60
+      note.deadline: 60
+      formula.content: 256

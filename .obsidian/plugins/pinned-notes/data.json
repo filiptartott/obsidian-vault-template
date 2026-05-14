@@ -1,0 +1,16 @@
+{
+  "pinnedNotes": [
+    {
+      "id": "0f08f93d-f5a2-4a72-a920-9552349a44d6",
+      "icon": "layout-list",
+      "path": "tasks.base",
+      "title": "Tasks"
+    },
+    {
+      "id": "95922e57-70e8-4e24-8402-96ee8c6026f3",
+      "icon": "calendar-days",
+      "path": "daily-notes.base",
+      "title": "Daily Notes"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+	"id": "priority-column",
+	"name": "Priority Column",
+	"version": "1.1.0",
+	"minAppVersion": "0.15.0",
+	"description": "Creates css class by priority in base column.",
+	"author": "Filip Tartott",
+	"authorUrl": "https://github.com/filiptartott",
+	"fundingUrl": "",
+	"isDesktopOnly": true
+}

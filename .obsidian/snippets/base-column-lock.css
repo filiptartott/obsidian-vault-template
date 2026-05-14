@@ -1,0 +1,11 @@
+.bases-thead .bases-td {
+    pointer-events: none !important;
+}
+
+.bases-table-header {
+    mask-image: none !important;
+}
+
+.bases-table-header-sort {
+    display: none !important;
+}

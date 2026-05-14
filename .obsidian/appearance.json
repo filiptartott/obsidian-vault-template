@@ -1,0 +1,19 @@
+{
+  "enabledCssSnippets": [
+    "custom-heading-sizes",
+    "heading-sizes-31-25-20",
+    "font-sizes-32-26-20-16",
+    "no-strikethrough",
+    "font-styles",
+    "inline-embed",
+    "ribbon",
+    "bases",
+    "priority-column",
+    "base-column-lock",
+    "right-panel",
+    "file-explorer-styles"
+  ],
+  "showRibbon": true,
+  "showViewHeader": true,
+  "nativeMenus": false
+}

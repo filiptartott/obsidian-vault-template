@@ -1,0 +1,9 @@
+{
+    "types": {
+        "done": "checkbox",
+        "priority": "text",
+        "start": "date",
+        "end": "date",
+        "deadline": "date"
+    }
+}

@@ -1,0 +1,70 @@
+.bases-table-cell .metadata-input-longtext {
+    color: #b3b3b3;
+}
+
+.bases-table-cell .internal-link {
+    color: #DADADA;
+    text-decoration: none;
+}
+
+.bases-toolbar .text-icon-button.is-active {
+    color: #DADADA;
+}
+
+.bases-tbody, .bases-td, .bases-thead, .bases-tr {
+    box-shadow: none;
+}
+
+.bases-view {
+    border: none !important;
+}
+
+.bases-view:hover::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb-bg) !important;
+}
+
+.bases-view::-webkit-scrollbar-thumb {
+    background-color: transparent !important;
+}
+
+.bases-embed .bases-table-cell[data-property-type="checkbox"] {
+    justify-content: start !important;
+}
+
+.bases-embed .bases-table-cell {
+    padding-left: 0 !important;
+}
+
+.bases-embed .bases-view {
+    overflow: visible !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content > [contenteditable=false] {
+    contain: none !important;
+}
+
+.bases-embed:not(:has(.has-active-menu)):not(:hover) .bases-toolbar-item:not(:first-child) {
+    display: none;
+}
+
+.bases-toolbar-item:first-child .text-button-label {
+    font-weight: 600 !important;
+    font-size: 16px !important;
+}
+
+.bases-toolbar-item:first-child .text-button-icon:first-child {
+    display: none;
+}
+
+.bases-embed .edit-block-button {
+    display: none !important;
+}
+
+.metadata-input-longtext {
+    text-overflow: clip !important;
+}
+
+.bases-td[data-property="formula.week"] .bases-table-cell {
+    letter-spacing: -1px;
+    font-weight: 700;
+}

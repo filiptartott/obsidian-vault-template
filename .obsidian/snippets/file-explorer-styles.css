@@ -1,0 +1,31 @@
+.nav-folder-title-content {
+    opacity: 75%;
+}
+
+.is-folder-note {
+    text-decoration: underline;
+}
+
+.tree-item-inner {
+    font-size: 14px;
+    color: #dfdfdf;
+}
+
+.nav-buttons-container {
+    justify-content: left;
+}
+
+.nav-action-button[aria-label="New note"],
+.nav-action-button[aria-label="New folder"],
+.nav-action-button[aria-label="Change sort order"],
+.nav-action-button[aria-label="Auto-reveal current file"] {
+    display: none;
+}
+
+.workspace-drawer-vault-actions .clickable-icon:first-child {
+    display: none;
+}
+
+.view-actions .view-action:nth-child(2) {
+    display: none;
+}

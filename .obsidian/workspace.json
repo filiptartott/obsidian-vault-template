@@ -1,0 +1,226 @@
+{
+  "main": {
+    "id": "836674b5789d0e44",
+    "type": "split",
+    "children": [
+      {
+        "id": "62752551968611d3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7e9082aa5b4364dc",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "bases",
+              "state": {
+                "file": "Bases/tasks.base",
+                "viewName": "Todo"
+              },
+              "pinned": true,
+              "icon": "lucide-table",
+              "title": "tasks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "ab329d9e13b2a633",
+    "type": "split",
+    "children": [
+      {
+        "id": "790610c96ce3b09b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "5694f28dfdff0674",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 291.5
+  },
+  "right": {
+    "id": "c2c3a240c18aa7b8",
+    "type": "split",
+    "children": [
+      {
+        "id": "3dc3ce3a5adc0eb3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ec741dc26e259ebf",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "a9c4e3ff1c7e91ed",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Bases/tasks.base",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of tasks"
+            }
+          },
+          {
+            "id": "c6bd9b5ccb16eff5",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": true,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "2cd7a268dc7b3b71",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          },
+          {
+            "id": "66d3d98eadad9d99",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Bases/tasks.base",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from tasks"
+            }
+          },
+          {
+            "id": "e02b6c1fd243a7de",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Bases/tasks.base",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for tasks"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 424.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": true,
+      "graph:Open graph view": true,
+      "canvas:Create new canvas": true,
+      "templates:Insert template": true,
+      "command-palette:Open command palette": true,
+      "bases:Create new base": true,
+      "pinned-notes:Tasks": false,
+      "daily-notes:Open today's daily note": false,
+      "pinned-notes:Daily Notes": false
+    }
+  },
+  "active": "7e9082aa5b4364dc",
+  "lastOpenFiles": [
+    "Tasks/Optimize page load performance and reduce bundle size.md",
+    "Notes/Vault template manual.md",
+    "Bases/tasks.base",
+    "Daily Notes/2026/05/2026-05-14.md",
+    "Bases/daily-notes.base",
+    "templates/Daily Note Template.md",
+    "Daily Notes/2026/05",
+    "Daily Notes/2026",
+    "Tasks/Redesign user onboarding flow to improve conversion rate.md",
+    "Tasks/Create reusable UI component library (buttons, inputs, cards).md",
+    "Tasks/Refactor navigation menu for improved accessibility and mobile usability.md",
+    "Tasks/Design and implement responsive dashboard layout for analytics page.md",
+    "Tasks/Design.md",
+    "sortspec.md",
+    "Tasks/Zobrazenie detailu undalosti v ActivityBoxe.md",
+    "Bases/tasks-embed.base",
+    "Daily Notes/2026/05/2026-05-13.md",
+    "Daily Notes/2026/05/2026-05-12.md",
+    "Tasks/Zapisat si dovolenku a HO na 21 a 22 maj.md",
+    "Tasks/Zistit preco sa nezbieraju data z dvojkovych kont.md",
+    "Tasks/pozriet sa na tabulky ktore mi Martin ukazoval.md",
+    "Tasks/Vybavit si ostatne flagnute emaily.md",
+    "Tasks/zistit co je reactor.md",
+    "Tasks/zistit naco je FormatedMessage.md",
+    "Tasks/pridat do notes testovacich userov.md",
+    "Tasks/ActivityBox refactoring.md",
+    "Tasks/Prichystat si e-vizitku a linkedin na CODECON.md",
+    "Tasks/Zalanyzovat .har files a poslat to Romanovi Badurikovi.md",
+    "Tasks/rozdelit kod do viacerych files, overit ci je vysledok kompilacie rovnaky.md",
+    "Tasks/Preskumat vypovednu hodnotu fenx-analytics eventov.md",
+    "Pasted image 20260505095525.png",
+    "weekly-sprints.base",
+    "Bases/weekly-sprints.base",
+    "Test Base.base",
+    "Test",
+    "TaskNotes/Views/kanban-default.base",
+    "Notes/Activity Box/ActivityBox FE structure.canvas",
+    "Notes/_attachments/Pasted image 20260302103726.png",
+    "Notes/_attachments/Pasted image 20260306174603.png",
+    "Notes/_attachments/Pasted image 20260318182121.png",
+    "Notes/_attachments/Pasted image 20260306173916.png",
+    "Notes/_attachments/Pasted image 20260306174540.png",
+    "Notes/_attachments/Pasted image 20260306173418.png",
+    "Notes/_attachments/Pasted image 20260306173020.png",
+    "Notes/_attachments/image-2025-11-27_13-9-1.png",
+    "Notes/_attachments/Mircoapps Architecture.png",
+    "Untitled.canvas"
+  ]
+}

@@ -1,0 +1,11 @@
+.priority-high .metadata-input-longtext {
+    color: rgb(255, 96, 96) !important;
+}
+
+.priority-medium .metadata-input-longtext {
+    color: rgb(255, 255, 128) !important;
+}
+
+.priority-low .metadata-input-longtext {
+    color: white !important;
+}

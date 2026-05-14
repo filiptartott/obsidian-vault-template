@@ -1,0 +1,35 @@
+formulas:
+  month: file.basename.slice(0, 7)
+views:
+  - type: table
+    name: Daily Notes 2026
+    filters:
+      and:
+        - file.inFolder("Daily Notes/2026")
+    groupBy:
+      property: formula.month
+      direction: DESC
+    order:
+      - file.name
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 189
+    markers: bullet
+  - type: table
+    name: Daily Notes 2025
+    filters:
+      and:
+        - file.inFolder("Daily Notes/2025")
+    groupBy:
+      property: formula.month
+      direction: DESC
+    order:
+      - file.name
+    sort:
+      - property: file.name
+        direction: DESC
+    columnSize:
+      file.name: 189
+    markers: bullet

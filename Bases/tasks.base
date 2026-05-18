@@ -10,7 +10,8 @@ formulas:
             if(
                 start.isEmpty() && end.isEmpty() && deadline.isEmpty(),
                 "",
-                if(
+                if(today().format("E") == value, "❲", "")
+                + if(
                     deadline ==
                         today() - (today().format("E") + "d") + (value + "d"),
                     "🟥",
@@ -24,9 +25,8 @@ formulas:
                         "🔲",
                         "⬛"
                     )
-                ) +
-                    if(today().format("E") == value + 1, "❲", "") +
-                    if(today().format("E") == value, "❳", "")
+                )
+                + if(today().format("E") == value, "❳", "")
             )
         ).join("")
         
